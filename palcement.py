@@ -15,7 +15,7 @@ Created on Tue Jun 24 10:31:56 2025
 import numpy as np
 import pickle
 import streamlit as st
-classifier=pickle.load(open('D:internship/savfiles/placement_models.sav','rb'))
+classifier=pickle.load(open('placement_models.sav','rb'))
 def salary_prediction(input_data):
     input_data_arr=np.asarray(input_data)
     input_data_reshape=input_data_arr.reshape(1,-1)
